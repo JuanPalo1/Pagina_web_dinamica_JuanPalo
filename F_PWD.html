@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>FORMULARIO a CV</h2>
+
+<form action="procesar_formulario.php" method="post">
+
+  <label for="Nom_Ape">Nombres y Apellidos :</label><br>
+  <input type="text" id="Nom_Ape" name="Nom_Ape"><br>
+
+  <p></p>
+
+  <label for="Fecha_Nac">Fecha de nacimiento :</label><br>
+  <input type="date" id="Fecha_Nac" name="Fecha_Nac"><br>
+
+  <p></p>
+
+  <label for="Ocup">Ocupación :</label><br>
+  <input type="text" id="Ocup" name="Ocup"><br>
+
+  <p>Contacto:</p>
+
+  <label for="Num_tel">Número telefónico [9 dígitos] :</label>
+  <input type="tel" id="Num_tel" name="Num_tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"><br>
+  <small>Formato: 912-345-678</small><br><br>
+
+  <p></p>
+
+  <label for="email">E-mail :</label>
+  <input type="email" id="email" name="email">
+
+  <p>Nacionalidad:</p>
+
+  <input list="nacionalidades">
+  <datalist id="nacionalidades" name="nacionalidad">
+      <option value="Antigua y Barbuda">
+      <option value="Argentina">
+      <option value="Bahamas">
+      <option value="Barbados">
+      <option value="Belice">
+      <option value="Bolivia">
+      <option value="Brasil">
+      <option value="Canadá">
+      <option value="Chile">
+      <option value="Colombia">
+      <option value="Costa Rica">
+      <option value="Cuba">
+      <option value="Dominica">
+      <option value="Ecuador">
+      <option value="El Salvador">
+      <option value="Estados Unidos">
+      <option value="Granada">
+      <option value="Guatemala">
+      <option value="Guyana">
+      <option value="Haití">
+      <option value="Honduras">
+      <option value="Jamaica">
+      <option value="México">
+      <option value="Nicaragua">
+      <option value="Panamá">
+      <option value="Paraguay">
+      <option value="Perú">
+      <option value="República Dominicana">
+      <option value="San Cristóbal y Nieves">
+      <option value="Santa Lucía">
+      <option value="San Vicente y las Granadinas">
+      <option value="Surinam">
+      <option value="Trinidad y Tobago">
+      <option value="Uruguay">
+      <option value="Venezuela">
+  </datalist><br>
+
+  <p>Idiomas:</p>
+
+  <input list="idiomas1">
+  <datalist id="idiomas1">
+      <option value="Español">
+      <option value="Inglés">
+      <option value="Chino Mandarín">
+      <option value="Ruso">
+      <option value="Francés">
+      <option value="Alemán">
+      <option value="Portugués">
+      <option value="Japones">
+      <option value="Italiano">
+      <option value="Árabe">
+      <option value="---">
+  </datalist><br>
+
+  <input list="idiomas2">
+  <datalist id="idiomas2">
+      <option value="Español">
+      <option value="Inglés">
+      <option value="Chino Mandarín">
+      <option value="Ruso">
+      <option value="Francés">
+      <option value="Alemán">
+      <option value="Portugués">
+      <option value="Japones">
+      <option value="Italiano">
+      <option value="Árabe">
+      <option value="---">
+  </datalist><br>
+
+  <input list="idiomas3">
+  <datalist id="idiomas3">
+      <option value="Español">
+      <option value="Inglés">
+      <option value="Chino Mandarín">
+      <option value="Ruso">
+      <option value="Francés">
+      <option value="Alemán">
+      <option value="Portugués">
+      <option value="Japones">
+      <option value="Italiano">
+      <option value="Árabe">
+      <option value="---">
+  </datalist><br>
+
+  <p>Aptitudes:</p>
+
+  <input list="aptitud1">
+  <datalist id="aptitud1">
+        <option value="Resolución de problemas">
+        <option value="Organización">
+        <option value="Liderazgo">
+        <option value="Creatividad">
+        <option value="Adaptabilidad">
+        <option value="Comunicación">
+        <option value="Autocontrol">
+        <option value="Integridad">
+        <option value="Trabajo en equipo">
+        <option value="Resiliencia">
+  </datalist><br>
+
+  <input list="aptitud2">
+  <datalist id="aptitud2">
+        <option value="Resolución de problemas">
+        <option value="Organización">
+        <option value="Liderazgo">
+        <option value="Creatividad">
+        <option value="Adaptabilidad">
+        <option value="Comunicación">
+        <option value="Autocontrol">
+        <option value="Integridad">
+        <option value="Trabajo en equipo">
+        <option value="Resiliencia">
+  </datalist><br>
+
+  <input list="aptitud3">
+  <datalist id="aptitud3">
+        <option value="Resolución de problemas">
+        <option value="Organización">
+        <option value="Liderazgo">
+        <option value="Creatividad">
+        <option value="Adaptabilidad">
+        <option value="Comunicación">
+        <option value="Autocontrol">
+        <option value="Integridad">
+        <option value="Trabajo en equipo">
+        <option value="Resiliencia">
+  </datalist><br>
+
+  <p>Habilidades: </p>
+
+  <input type="checkbox" id="Hab1" name="habilidades[]" value="Multilingüismo">
+  <label for="Multilingüismo"> Multilingüismo</label><br>
+  <input type="checkbox" id="Hab2" name="habilidades[]" value="Informática">
+  <label for="Informática"> Informática</label><br>
+  <input type="checkbox" id="Hab3" name="habilidades[]" value="Lectura">
+  <label for="Lectura"> Lectura</label><br>
+  <input type="checkbox" id="Hab4" name="habilidades[]" value="Deportismo">
+  <label for="Deportismo"> Deportismo</label><br>
+  <input type="checkbox" id="Hab5" name="habilidades[]" value="Inteligencia lógico-matemática">
+  <label for="Inteligencia lógico-matemática"> Inteligencia lógico-matemática</label><br>
+  <input type="checkbox" id="Hab6" name="habilidades[]" value="Medicina">
+  <label for="Medicina"> Medicina</label><br>
+  <input type="checkbox" id="Hab7" name="habilidades[]" value="Artes plásticas">
+  <label for="Artes plásticas"> Artes plásticas</label><br>
+  <input type="checkbox" id="Hab8" name="habilidades[]" value="Artes escenográficas">
+  <label for="Artes escenográficas"> Artes escenográficas</label><br>
+  <input type="checkbox" id="Hab9" name="habilidades[]" value="Arte musical">
+  <label for="Arte musical"> Arte musical</label><br>
+
+
+  <p><label for="perfil">Perfil:</label></p>
+  <textarea id="perfil" name="perfil" rows="4" cols="50">Cuentanos un poco sobre ti.</textarea><br>
+
+  <p><label for="EXP_LAB">Experiencia Laboral:</label></p>
+  <textarea id="EXP_LAB" name="EXP_LAB" rows="10" cols="70">Cuentanos un poco sobre tus experiencias laborales.</textarea><br>
+
+  <p><label for="Formacion">Formación:</label></p>
+  <textarea id="Formacion" name="Formacion" rows="10" cols="70">¿Cómo fue formación profesional?</textarea><br>
+
+  <p>Gracias por responder este formulario</p>
+  <input type="submit" value="Enviar">
+</form>
+
+</body>
+</html>
+
